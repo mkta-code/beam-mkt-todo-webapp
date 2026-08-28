@@ -151,7 +151,7 @@ export default function Home() {
           reject(new Error("โหลดข้อมูลไม่ได้"));
         };
         script.src = url.toString();
-        document.body.append(script);
+        document.body.appendChild(script);
       });
 
       if (!data.ok) throw new Error(data.error || "Apps Script ส่งข้อมูลกลับมาไม่สำเร็จ");
@@ -203,7 +203,7 @@ export default function Home() {
             reject(new Error("ส่งข้อมูลไม่ได้"));
           };
           script.src = url.toString();
-          document.body.append(script);
+          document.body.appendChild(script);
         },
       );
 
